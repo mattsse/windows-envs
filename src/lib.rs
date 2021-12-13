@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 #[cfg(test)]
 mod tests {
     #[test]
@@ -20,5 +22,12 @@ mod tests {
         dbg!(
             std::env::var("CARGO_CFG_WINDOWS")
         );
+
+
+        #[cfg(any(not(any(target_arch = "x86", target_arch = "x86_64")), target_env = "msvc"))]
+        println!("THIS SHOULD BE MSCV REGARDLESS");
+
+        #[cfg(all(any(target_arch = "x86", target_arch = "x86_64"), not(target_env = "msvc")))]
+        println!("THIS SHOULD BE x86(_x86_64) AND NOT MSVC");
     }
 }

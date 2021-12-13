@@ -23,6 +23,7 @@ mod tests {
         //     std::env::var("CARGO_CFG_WINDOWS")
         // );
 
+        use sha2;
 
         #[cfg(any(not(any(target_arch = "x86", target_arch = "x86_64")), target_env = "msvc"))]
         println!("THIS SHOULD BE MSCV REGARDLESS");

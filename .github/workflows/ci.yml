@@ -73,3 +73,14 @@ jobs:
       - name: reexport test
         run: cd reexport && cargo test --verbose -- --nocapture
         shell: cmd
+
+      - name: usage build
+        run: |
+          rustc -Vv
+          cargo -V
+          cd usage &&  cargo build --verbose
+        shell: cmd
+
+      - name: usage test
+        run: cd usage && cargo test --verbose -- --nocapture
+        shell: cmd

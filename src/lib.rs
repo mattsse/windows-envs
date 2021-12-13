@@ -4,24 +4,24 @@
 mod tests {
     #[test]
     fn it_works() {
-        dbg!(
-            std::env::var("CARGO_CFG_TARGET_FAMILY")
-        );
-        dbg!(
-            std::env::var("CARGO_CFG_TARGET_OS")
-        );
-        dbg!(
-            std::env::var("CARGO_CFG_TARGET_ARCH")
-        );
-        dbg!(
-            std::env::var("CARGO_CFG_TARGET_VENDOR")
-        );
-        dbg!(
-            std::env::var("CARGO_CFG_TARGET_ENV")
-        );
-        dbg!(
-            std::env::var("CARGO_CFG_WINDOWS")
-        );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_TARGET_FAMILY")
+        // );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_TARGET_OS")
+        // );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_TARGET_ARCH")
+        // );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_TARGET_VENDOR")
+        // );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_TARGET_ENV")
+        // );
+        // dbg!(
+        //     std::env::var("CARGO_CFG_WINDOWS")
+        // );
 
 
         #[cfg(any(not(any(target_arch = "x86", target_arch = "x86_64")), target_env = "msvc"))]

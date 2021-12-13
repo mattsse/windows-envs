@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/Matthias/git/rust/windows-envs/reexport/target/debug/build/typenum-0f3ef5465ae6cb51/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/Matthias/git/rust/windows-envs/reexport/target/debug/build/typenum-0f3ef5465ae6cb51/out/op.rs

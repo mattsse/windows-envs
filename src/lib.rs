@@ -1,5 +1,9 @@
 #![allow(unused)]
 
+pub struct A {
+    inner: sha2::Sha256
+}
+
 #[cfg(test)]
 mod tests {
     #[test]
